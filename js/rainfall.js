@@ -1,14 +1,14 @@
 $(document).ready(function() {
   rainfall();
   perspective();
+  continuity();
   
   function rainfall() {
-    if ($(window).width() < 500 ) {
+    if($('#rain').height() < 200 || $(window).width() < 500 ) {
       setInterval(function() {
         rain();
       }, 100 );
-    }
-    else if ($(window).width() < 900 ) {
+    } else if ($(window).width() < 900 ) {
       setInterval(function() {
         rain();
       }, 50 );
@@ -62,7 +62,29 @@ $(document).ready(function() {
       setTimeout(function() {
         $('#perspective__change svg').removeClass('refresh');
       }, 1000);
-      
+    });
+  }
+
+  function moodRing() {
+    var bodyClass = $('body').attr('class').split(/\s+/);
+    var moods = ['morpheus', 'azure', 'grass', 'fruit', 'deep', 'sunset', 'lemon'];
+    var whim = '';
+    $.each(bodyClass, function(index, value) {
+      var mood = value;
+      var index = index;
+      if (mood.inArray(moods)) {
+        whim += mood;
+      }
+    });
+    return whim;
+  }
+
+  function continuity() {
+    var whim = moodRing();
+    $('a').click(function() {
+      var _this = $(this);
+      var _href = _this.attr('href');
+      $(_this).attr('href', _href + '?mood=' + whim);
     });
   }
 });
