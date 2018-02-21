@@ -1,5 +1,5 @@
 # Hello!
-## This is a simple website repo.
+### This is a simple website repo.
 
 Here you'll find all the code for my personal website, built with HTML/CSS and JS (+jQuery).
 
