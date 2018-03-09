@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 	function titleSequence() {
 		var line1 = 'Hello, there.';
-		var line2 = "I'm Leela.";
+		var line2 = "I'm Ash.";
 		var line3 = 'Developer, designer, teacher, sci-fi enthusiast.';
 		
 		line1 = line1.split("");
