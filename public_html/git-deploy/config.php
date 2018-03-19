@@ -6,7 +6,7 @@ define("TOKEN", $secret_key);
 // The secret token to add as a GitHub or GitLab secret, or otherwise as https://www.example.com/?token=secret-token
 define("REMOTE_REPOSITORY", "git@github.com:ashsaraga/ashsaraga.com.git"); 
 // The SSH URL to your repository
-define("DIR", "/var/www/");                          
+define("DIR", "/var/www/ashsaraga.com/");                          
 // The path to your repostiroy; this must begin with a forward slash (/)
 define("BRANCH", "refs/heads/master");                                 
 // The branch route
