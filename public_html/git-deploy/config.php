@@ -14,5 +14,5 @@ define("LOGFILE", "deploy.log");
 // The name of the file you want to log to.
 define("GIT", "/usr/bin/git");                                         
 // The path to the git executable
-define("AFTER_PULL", "");                                              
+// define("AFTER_PULL", "");                                              
 // A command to execute after successfully pulling
